@@ -1,0 +1,64 @@
+/*
+ * 
+ * KEXP
+ * Animated Logo css
+ * 
+ */
+
+
+
+/************************************************************************************
+SITE-WIDE
+*************************************************************************************/
+
+.logo {
+  display: block;
+  position: relative;
+  top: 16px;
+  left: 1px;
+  padding-bottom: 16px;
+  height: 71px;
+  width: 68px;
+}
+.logo img {
+	border: none;
+}
+.bar {
+  position: absolute;
+  bottom: 0;
+  width: 14px;
+  margin-right: 1px;
+  min-height: 20px;
+  padding-bottom: 2px;
+  background-color: #fff;
+}
+.bar .bar-top {
+  position: absolute;
+  top: 0;
+  width: 14px;
+}
+.letters-bottom {
+  position: absolute;
+  bottom: 0;
+}
+.k {
+  left: 0px;
+}
+.e {
+  left: 18px;
+}
+.x {
+  left: 36px;
+}
+.p {
+  left: 54px;
+}
+.bars {
+  position: absolute;
+  top: 41px;
+  }
+.logo-cont {
+  display: inline-block;
+  float: left;
+  margin-top: 22px;
+}

@@ -1,0 +1,156 @@
+
+/*   KEXP Mobile/Tablet Styles   */
+
+
+
+/* Media query for 1500 Screens */
+@media only screen and (max-width:1500px){
+
+    .featured-news img {
+    	max-width:100px;
+    }
+
+    .label {
+        font-size: 8px;
+        padding: 4px 6px 4px 6px;
+    }
+}
+
+/* Media query for 1300 Screens */
+@media only screen and (max-width:1300px){
+
+    /*.column, .columns {
+        padding: 5px;
+    }*/
+	
+    .featured-news img {
+    	max-width:80px;
+    }
+
+    .row-featured {
+    	width: 100%;
+    	margin: 0px;
+    }
+
+    .featured-news {
+    	width: 100%;
+    	margin: 0px;
+    	margin: 0 auto;
+    	margin-top: 20px;
+    }
+
+    .featured-news a {
+        width: 50%;
+    }
+
+}
+
+
+/* Media query for 1200 Screens */
+@media only screen and (max-width:1200px){
+
+    .featured-news img {
+    	max-width:70px;
+    }
+
+    .overlay-content h4 {
+        font-size: 18px;
+        line-height: 19px;
+    }
+}
+
+
+
+/* Media query for 1100 Screens */
+@media only screen and (max-width:1100px){
+
+    h3 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .top-message {
+        font-size: 26px;
+    }
+}
+
+/* Media query for 960 Screens */
+@media only screen and (max-width:960px){
+
+
+}
+
+/* Media query for 768 Screens */
+@media only screen and (max-width:768px){
+
+    /*.column, .columns {
+        padding: 5px;
+    }*/
+
+	.top-links {
+		display: inline-block;
+		overflow: hidden;
+		width: 1em;
+		line-height: 44px;
+	}
+
+	.header-scrolling .listen-live li {
+		display: none;
+	}
+	.header-scrolling .nav-left {
+		margin-left: 76px;
+		font-size: 85%;
+	}
+	
+    .space-top {
+    	margin-top: 5px;
+    }
+
+	.row-featured .columns {
+		margin-bottom: 0.5em;
+	}
+    .nav-right {
+    	display: none;
+    }
+
+    .now-playing{ 
+    	display: none;
+    }
+
+    .space-bot50 {
+        margin-bottom: 15px;
+    }
+
+    .space-top50 {
+        margin-top: 15px;
+    }
+}
+
+
+
+/* Media query for 480 Screens */
+@media only screen and (max-width:480px){
+
+    .featured-news a {
+        width: 100%;
+    }
+
+    .featured-news img {
+    	max-width:130px;
+    }
+
+    .image-overlay-content {
+        padding: 7px 10px 7px 10px;
+    }
+
+    .orange-image-overlay-content {
+        padding: 7px 10px 7px 10px;
+    }
+
+    .bg-full-image {
+        height: auto;
+        max-height: 500px;
+    }
+
+}
+
