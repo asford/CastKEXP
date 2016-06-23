@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="CastKEXPDemo">
 <head>
   <title>KEXP - 90.3 FM Where the music matters</title>
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
@@ -16,17 +16,17 @@
   <meta name="application-name" content="KEXP">
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="/img/fav/mstile-144x144.png"><!-- styles -->
-  <link rel="stylesheet" type="text/css" href="css/foundation.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/app.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/logo.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
   <link rel="stylesheet" type="text/css" href="/css/normalize.css" media="all"><!-- Fonts / Need to switch out with KEXP's typekit -->
 
-  <script src="https://use.typekit.net/ktw4eko.js" type="text/javascript">
-</script>
-  <script type="text/javascript">
-try{Typekit.load({ async: true });}catch(e){}
-  </script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css" rel="stylesheet">
+
+  <script src="js/angular_player.js"></script>
+
 </head>
 
 <body>
@@ -39,24 +39,36 @@ try{Typekit.load({ async: true });}catch(e){}
         <div class="player">
            <div class="row2">
              <div class="medium-12 columns">
-				<div class="logo-cont"><a href="/" class="logo" title="KEXP 90.3 FM"><div 
-				class="bars"><div class="bar k"><img src="/img/1px.png" class="bar-top" alt="" /></div><div class="bar e"><img src="/img/1px.png" class="bar-top" alt="" /></div><div class="bar x"><img src="/img/1px.png" class="bar-top" alt="" /></div><div
-				class="bar p"><img src="/img/1px.png" class="bar-top" alt="" /></div></div><img src="/img/kexp-letters.png" alt="KEXP" class="letters-bottom" /></a></div> 
-               <!-- a href="#"><div class="logo"><h1>KEXP - 90.3 FM Where the music matters</h1></div></a -->
-                 <div class="listen-live">
-                     <li class="orange text-center small-caps">Listen Live</li>
-                     <a href="#"><div class="player-button">PLAY</div></a>
-                 </div>
+               <div class="logo-cont">
+                 <a href="/" class="logo" title="KEXP 90.3 FM">
+                   <div class="bars">
+                     <div class="bar k"><img src="/img/1px.png" class="bar-top" alt="" /></div>
+                     <div class="bar e"><img src="/img/1px.png" class="bar-top" alt="" /></div>
+                     <div class="bar x"><img src="/img/1px.png" class="bar-top" alt="" /></div>
+                     <div class="bar p"><img src="/img/1px.png" class="bar-top" alt="" /></div>
+                   </div>
+                   <img src="/img/kexp-letters.png" alt="KEXP" class="letters-bottom" />
+                 </a>
+               </div> 
+               <div class="listen-live">
+                 <li class="orange text-center small-caps">Listen Live</li>
+                 <a href="#"><div class="player-button">PLAY</div></a>
+               </div>
 
-                 <div class="now-playing">
-                    <a href="#"><img src="http://www.belleandsebastian.com/wp-content/uploads/2010/10/The-Blues-Are-Still-Blue.jpg"></a>
-                    <ul class="info">
-                      <li class="orange small-caps"><a href="#">Now Playing</a></li>
-                      <li class="show-info"><a class="white" href="#">The Afternoon Show with Kevin Cole</a></li>
-                      <li class="artist-name-playing"><a class="white" href="#">Belle and Sebastian</a> – <span class="song-name-playing"> Sleep the Clock Around Sleep the Clock Around</span></li>
-                      <li class="album-name-playing">The Boy with the Arab Strap</li>
-                    </ul>
-                 </div>
+                <div class="now-playing" ng-controller="NowPlayingController" ng-cloak>
+                  <a href="#"><img ng_src="{{playing_img_src}}"></a>
+
+                  <ul class="info">
+                    <li class="orange small-caps"><a href="#">Now Playing</a></li>
+                    <li class="show-info"><a class="white" href="#">{{show_info}}</a></li>
+                    <li class="artist-name-playing">
+                      <a class="white" href="#">{{playing_artist_name}}</a> - 
+                      <span class="song-name-playing">{{playing_song_name}}</span>
+                    </li>
+                    <li class="album-name-playing">{{playing_album_name}}</li>
+                  </ul>
+                </div>
+
 
                 <div class="top-right-links">
                     <li><a class="white playlist" href="/playlist">Playlist</a></li>
@@ -69,12 +81,6 @@ try{Typekit.load({ async: true });}catch(e){}
 
 <!-- Scripts -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/vendor/modernizr.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
 </body>
 </html>
