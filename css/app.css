@@ -527,117 +527,6 @@ TOP LINKS
 
 
 /************************************************************************************
-PLAYER
-*************************************************************************************/
-
-
-.player {
-	width: 100%;
-	height:130px;
-	z-index: 9000;
-	position: relative;
-}
-
-.listen-live {
-	display: block;
-	float: left;
-	margin-top:19px;
-	margin-right: 25px;
-	position: fixed;
-    margin-left: 140px;
-}
-
-.player-button {
-	display: block;
-	float: left;
-	opacity: 1;
-	background: url(/img/play-btn.png);
-	width: 65px;
-	height: 65px;
-	background-size: 65px 130px;
-	background-position: bottom;
-	text-indent: -9999px;
-	margin-top: 5px;
-}
-
-.player-button:hover {
-	background-position: top;
-}
-
-
-.player-progress {
-	display: block;
-	height: 1px;
-	position: fixed;
-	width: 100%;
-	top:130px;
-	background: #feac31;
-	z-index:1000;
-}
-
-.now-playing {
-	display: block;
-	float: left;
-	margin-top: 22px;
-    opacity: 1;
-    position: fixed;
-    margin-left: 235px;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-
-}
-
-.now-playing img{
-	width: 84px;
-	height: 84px;
-	max-height: 84px;
-	max-width: 84px;
-	display: block;
-	float: left;
-	border: 1px solid #aaa;
-}
-
-
-.now-playing .info{
-	display: block;
-	float: left;
-	color: #fff;
-	margin-left: 15px;
-}
-
-.show-info {
-	font-size: 16px;
-}
-
-.artist-name-playing a {
-	font-size: 16px;
-	font-weight: bold;
-	display: inline-block;
-}
-
-.song-name-playing {
-	font-weight: normal;
-	overflow:hidden;
-    text-overflow:ellipsis;
-    white-space: nowrap;
-    width: 300px;
-    display: inline-block;
-    float: right;
-    padding-left: 5px;
-}
-
-.album-name-playing {
-	font-size: 12px;
-	text-transform: uppercase;
-}
-
-
-
-
-/************************************************************************************
 ON-SCROLL HEADER
 *************************************************************************************/
 
@@ -758,6 +647,7 @@ ON-SCROLL HEADER
 .header-scrolling .logo-cont {
   display: inline-block;
   margin-top: 18px;
+  margin-left: 18px;
   margin-left: 18px;
   float: left;
 }
