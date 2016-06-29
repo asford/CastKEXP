@@ -122,7 +122,7 @@ PLAYER
   margin: auto;
   cursor: pointer;
 	opacity: 1;
-	background: url(/img/play-btn.png);
+	background: url(../img/play-btn.png);
 	width: 40px;
 	height: 40px;
 	background-size: 40px 80px;

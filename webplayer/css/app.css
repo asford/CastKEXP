@@ -355,7 +355,7 @@ ICONS
 	float: left;
 	opacity: 1;
 	text-indent: 25px;
-	background: url(/img/watch-now-icon.png);
+	background: url(../img/watch-now-icon.png);
 	background-size: 17px 17px !important;
     margin-top: 3px;
     width:100%;
@@ -369,7 +369,7 @@ ICONS
 }
 
 .watch-icon:hover{
-	background: url(/img/orange-play-btn.png);
+	background: url(../img/orange-play-btn.png);
 	display: block;
 	float: left;
 	opacity: 1;
@@ -391,7 +391,7 @@ ICONS
 	float: left;
 	opacity: 1;
 	text-indent: 25px;
-	background: url(/img/watch-now-icon-dark.png);
+	background: url(../img/watch-now-icon-dark.png);
 	background-size: 17px 17px !important;
     margin-top: 3px;
     width:100%;
@@ -405,7 +405,7 @@ ICONS
 }
 
 .watch-icon-dark:hover{
-	background: url(/img/dark-play-btn.png);
+	background: url(../img/dark-play-btn.png);
 	display: block;
 	float: left;
 	opacity: 1;
@@ -426,7 +426,7 @@ ICONS
 	float: left;
 	opacity: 1;
 	text-indent: 25px;
-	background: url(/img/listen-now-icon.png);
+	background: url(../img/listen-now-icon.png);
 	background-size: 17px 17px !important;
     margin-top: 3px;
     width:100%;
@@ -439,7 +439,7 @@ ICONS
 }
 
 .listen-icon:hover{
-	background: url(/img/orange-play-btn.png);
+	background: url(../img/orange-play-btn.png);
 	display: block;
 	float: left;
 	opacity: 1;
@@ -461,7 +461,7 @@ ICONS
     background: red;
     top: calc(50% - 35px);
     opacity: 1;
-    background: url(/img/play-btn.png);
+    background: url(../img/play-btn.png);
     width: 70px;
     height: 70px;
     background-size: 70px 140px;
@@ -593,7 +593,7 @@ ON-SCROLL HEADER
 
 .header-scrolling .logo-orig {
 	display:block;
-	background: url(/img/kexp-logo-small.png);
+	background: url(../img/kexp-logo-small.png);
 	width: 46px;
 	height: 40px;
 	background-size: 46px 40px;
@@ -686,7 +686,7 @@ header {
 
 .logo-orig {
 	display:block;
-	background: url(/img/kexp-logo.png);
+	background: url(../img/kexp-logo.png);
 	width: 82px;
 	height: 72px;
 	background-size: 82px 72px;
@@ -760,7 +760,7 @@ nav li a{
     -moz-filter: blur(12px);
     -o-filter: blur(12px);
     -ms-filter: blur(12px);
-    filter: url(/img/blur.svg#blur);
+    filter: url(../img/blur.svg#blur);
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='$radius');
     -webkit-backface-visibility: hidden;
     
@@ -811,7 +811,7 @@ nav li a{
 .bg-full-image {
 	display: block;
 	height: 250px;
-	background-image: url(/img/kexp-full-width.jpg);
+	background-image: url(../img/kexp-full-width.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
     width: 100%;
@@ -1132,7 +1132,7 @@ footer {
 
 .footer-logo {
 	display:block;
-	background: url(/img/kexp-footer-logo-v2.gif);
+	background: url(../img/kexp-footer-logo-v2.gif);
 	width: 84px;
 	height: 111px;
 	background-size: 84px 111px;
@@ -1144,19 +1144,19 @@ footer {
 }
 
 a.instagram{
-	background: url(/img/instagram.png);
+	background: url(../img/instagram.png);
 }
 
 a.facebook{
-	background: url(/img/facebook.png);
+	background: url(../img/facebook.png);
 }
 
 a.twitter{
-	background: url(/img/twitter.png);
+	background: url(../img/twitter.png);
 }
 
 a.youtube{
-	background: url(/img/youtube.png);
+	background: url(../img/youtube.png);
 	
 }
 
