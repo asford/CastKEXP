@@ -25,7 +25,8 @@
 
   <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css" rel="stylesheet">
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"></script>
-  <script type="text/javascript" src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+  <script src="//colthreepv.github.io/angular-media-player/dist/angular-media-player.min.js" type="text/javascript"></script>
+  <script src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js" type="text/javascript"></script>
   <script src="js/angular_player.js"></script>
 
 </head>
@@ -51,14 +52,16 @@
        </div> 
 
        <div class="player_controls" ng-controller="PlayerController"
-         ng-class="{cast_available: is_cast_available()}" ng-cloak>
+         ng-class="{cast_available: castservice.available}" ng-cloak>
          <li class="orange text-center small-caps">Listen Live</li>
-         <div class="player-button"
-              ng-click="on_play()">PLAY</div>
+         <div class="player-button" ng-click="on_play()">PLAY</div>
          <div id="audio_chromecast_image" class="chromecast_icon"
-           ng-class="{cast_active: is_cast_connected()}"
+           ng-class="{cast_active: current_mode == 'cast'}"
            ng-click="on_cast()"></div>
-         <input class="volume_control" type="range" />
+         <input class="volume_control" type="range" min="0" max="1" step=".1" ng-model="current_volume" ng-change="on_volume_change()" />
+         <audio media-player="local_player" preload="none">
+           <source src="http://live-aacplus-64.kexp.org/kexp64.aac" type="audio/aac">
+         </audio>
        </div>
 
        <div class="now-playing" ng-controller="NowPlayingController" ng-cloak>
