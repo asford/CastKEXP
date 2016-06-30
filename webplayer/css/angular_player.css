@@ -98,21 +98,32 @@ PLAYER
   flex: 1 0 300px;
   opacity: 1;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: 15px;
+  max-width: 100%;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+}
+
+.player .now-playing-info ul {
+  max-width: 90%;
+	display: block;
+	float: left;
+	color: #fff;
+	margin-left: 0px;
+}
+.player .now-playing-info li {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 
 }
 
 
 .now-playing-info .info{
-	display: block;
-	float: left;
-	color: #fff;
-	margin-left: 15px;
 }
 
 .show-info {
