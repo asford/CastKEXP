@@ -659,30 +659,12 @@ ON-SCROLL HEADER
 
 .header-scrolling .album-black-bg {
 	height: 130px;
-    max-height: 130px;
-    
+  max-height: 130px;
 }
 
 /************************************************************************************
 HEADER / NAVIGATION
 *************************************************************************************/
-
-header {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9997;
-	height: 200px;
-	overflow:hidden;
-
- 	-webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
- 	display: block;
-}
 
 .logo-orig {
 	display:block;
@@ -764,16 +746,6 @@ nav li a{
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='$radius');
     -webkit-backface-visibility: hidden;
     
-}
-
-.album-black-bg {
-	position: fixed;
-	display: block;
-	height: 200px;
-	background: #000000;
-	width: 100%;
-    max-height: 200px;
-    z-index:0;
 }
 
 .nav-right {

@@ -1,28 +1,40 @@
+body {
+	font-family: "proxima-nova",sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	text-shadow: none;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9997;
+	height: 100%;
+
+ 	-webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+ 	display: block;
+}
+
+.album-black-bg {
+	position: fixed;
+	display: block;
+	height: 100%;
+	background: #000000;
+	width: 100%;
+  z-index:0;
+}
+
+
 /************************************************************************************
 PLAYER
 *************************************************************************************/
 
-
-.player {
-  margin-top: 30px;
-	width: 100%;
-	height:100px;
-	z-index: 9000;
-	position: relative;
-  display: flex;
-}
-
-.player .logo-cont {
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.player_controls {
-  width: 80px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
 
 
 .player-progress {
@@ -34,10 +46,35 @@ PLAYER
 	z-index:1000;
 }
 
-.now-playing {
-	display: block;
-	float: left;
+.player {
+	width: 100%;
+	z-index: 9000;
+	position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.player .logo-cont {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 0 0 68px;
+}
+
+.player .player_controls {
+  flex: 0 0 80px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+.player .now-playing-img {
+  flex: 0 0 84px;
   opacity: 1;
+  margin-top: 30px;
   margin-left: 0px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -47,7 +84,7 @@ PLAYER
 
 }
 
-.now-playing img{
+.now-playing-img img{
 	width: 84px;
 	height: 84px;
 	max-height: 84px;
@@ -57,8 +94,21 @@ PLAYER
 	border: 1px solid #aaa;
 }
 
+.player .now-playing-info {
+  flex: 1 0 300px;
+  opacity: 1;
+  margin-top: 30px;
+  margin-left: 0px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 
-.now-playing .info{
+}
+
+
+.now-playing-info .info{
 	display: block;
 	float: left;
 	color: #fff;
@@ -78,12 +128,12 @@ PLAYER
 .song-name-playing {
 	font-weight: normal;
 	overflow:hidden;
-    text-overflow:ellipsis;
-    white-space: nowrap;
-    width: 300px;
-    display: inline-block;
-    float: right;
-    padding-left: 5px;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  width: 300px;
+  display: inline-block;
+  float: right;
+  padding-left: 5px;
 }
 
 .album-name-playing {
@@ -142,7 +192,7 @@ PLAYER
 
 .player_controls .volume_control{
   width: 80px;
+  display: block;
   margin: auto;
-
 }
 

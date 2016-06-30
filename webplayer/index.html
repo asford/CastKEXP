@@ -35,14 +35,12 @@
 </head>
 
 <body>
-<div class="inner-wrap">
-
 <!-- Main Menu / Player -->
     <header>
       <div class="album-black-bg"><div class="album-cover-stretched"></div></div>
 
-      <div class="player">
-       <div class="logo-cont player-logo">
+      <div class="player" ng-controller="NowPlayingController">
+       <div class="logo-cont">
          <a href="/" class="logo" title="KEXP 90.3 FM">
            <div class="bars">
              <div class="bar k"><img src="img/1px.png" class="bar-top" alt="" /></div>
@@ -67,16 +65,15 @@
          </audio>
        </div>
 
-       <div class="now-playing" ng-controller="NowPlayingController" ng-cloak>
+       <div class="now-playing-img" ng-cloak>
           <a href="#"><img ng-src="{{playing_img_src}}"></a>
+       </div>
 
+       <div class="now-playing-info" ng-cloak>
           <ul class="info">
             <li class="orange small-caps">Now Playing</li>
             <li class="show-info"><a class="white" href="#">{{show_info}}</a></li>
-            <li class="artist-name-playing">
-              <a class="white" target="_new" ng-href="{{playing_artist_link}}">{{playing_artist_name}}</a> - 
-              <span class="song-name-playing">{{playing_song_name}}</span>
-            </li>
+            <li class="artist-name-playing"><a class="white" target="_new" ng-href="{{playing_artist_link}}">{{playing_artist_name}}</a> - {{playing_song_name}}</li>
             <li class="album-name-playing">{{playing_release_name}}</li>
           </ul>
        </div>
